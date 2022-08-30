@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6bbe1ea9b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carrier Look up</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Left side Nav Start 
+        ----------------------->
+        
+        <div class="left-nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav-area">
+                <ul>
+                    <li> <img src="img/icons/dash-icon.png" alt=""><a href="#">Dasboard</a></li>
+                    <li> <img src="img/icons/lookup.png" alt=""><a href="#">LookUp</a></li>
+                    <li> <img src="img/icons/files.png" alt=""><a href="#">Files</a></li>
+                    <li> <img src="img/icons/logs.png" alt=""><a href="#">Logs</a></li>
+                    <li> <img src="img/icons/buys.png" alt=""><a href="#">By Credits</a></li>
+                    <li> <img src="img/icons/integration.png" alt=""><a href="#">Integrations</a></li>
+                    <li> <img src="img/icons/profile.png" alt=""><a href="#" class="active">My Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Left side Nav End 
+        ---------------------->
+
+        <div class="right-area">
+            <div class="top-nav">
+                <div class="top-nav-menu">
+                    <p>Balance :  <span class="balance-count">$125</span></p>
+                    <nav>                     
+                          <img src="img/profile-img.png" alt="">
+                          <h4>Alexa Jui</h4> 
+                    </nav>
+                </div>
+            </div>
+                <div class="profile-info">
+                    <div class="profile-info-left">
+                        <img src="img/profile-img.png" alt="">
+                        <h3>Alexa Jui</h3>
+                        <p>alexajui@gmail.com</p>
+                        <p>+1 354 785 4125</p>
+                        <p>3213 D Street, Columbus, USA</p>
+
+                    </div>
+                    <div class="profile-info-right">
+                        <p><strong>Your Credit Card</strong></p>
+                        <div class="card-area">
+                            <div class="credit-card">
+                                <img src="img/icons/delete.png" alt="">
+                                <p>
+                                    Credit Card 1
+                                </p>
+                                <p>
+                                    xxxxxxxxxxxx4684
+                                </p>
+
+                            </div>
+                            <div class="credit-card , default-card">
+                                <img src="img/icons/delete.png" alt="">
+                                <p>
+                                    Credit Card 2 (Default) 
+                                </p>
+                                <p>
+                                    xxxxxxxxxxxx4684
+                                </p>
+    
+                            </div>
+                            <div class="credit-card">
+                                <img src="img/icons/delete.png" alt="">
+                                <p>
+                                    Credit Card 3
+                                </p>
+                                <p>
+                                    xxxxxxxxxxxx4684
+                                </p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-settings">
+                    <div class="tab">
+                        <button class="tablinks" onclick="profile(event, 'Update')">Update Profile</button>
+                        <button class="tablinks" onclick="profile(event, 'Change')">Change Password</button>
+                        <button class="tablinks active " onclick="profile(event, 'Email')">Email Notifications</button>
+                        <button class="tablinks" onclick="profile(event, 'Auto')">Auto Recharge Settings</button>
+                      </div>
+                      
+                      <div id="Update" class="tabcontent">
+                        
+                      </div>
+                      
+                      <div id="Change" class="tabcontent">
+                        
+                      </div>
+                      <div id="Email" class="tabcontent">
+                        <div class="settings-info">
+                            <div class="input-toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notify me when list verification completes </p>
+                            </div>
+                            <div class="input-toggle inactive-text">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notify me when list verification completes </p>
+                            </div>
+                            <div class="input-toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notify me when list verification result is about to expire </p>
+                            </div>
+                            <hr class="border-color">
+                            
+                            <div class="input-toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notify Receive Low Credits Email</p>
+                            </div>
+                            <div>
+                                <form class="" action="#">
+                                    <div class="input-area">
+                                        <div class="intup-form">
+                                            <p class="inactive-text">Send Email to*</p>
+                                            <input type="email" id="email" placeholder="alexajui@gmail.com" name="email">
+                                       </div>
+                                       <div class="intup-form">
+                                           <p class="inactive-text">When credits are less than*</p>
+                                           <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+                                       </div>
+                                    </div>
+                                    <hr class="border-color">
+                                    <div>
+                                        <input type="button" class="button" value="Save Changes">
+                                    </div>
+                                  </form>
+                            </div>
+                            
+                        </div>
+                        
+                      </div>
+
+                      <div id="Auto" class="tabcontent">
+                      </div>
+                      
+                    <div>
+
+                    </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+    <script src="js/main.js">
+
+    </script>
+</body>
+</html>

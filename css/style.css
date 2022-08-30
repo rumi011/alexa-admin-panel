@@ -1,0 +1,344 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FCFBFF;
+}
+
+/* Some usuable class 
+-----------------------*/
+
+.inactive-text {
+    color: #7D7D7E;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}    
+.border-color {
+    background-color: #F2F2F4;;
+}
+
+/* Container 
+-------------*/
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* left side Nav-menu
+-------------------- */
+
+.left-nav{
+    height: auto;
+    width: 12%;
+    border-radius: 0px;
+    background-color: black;
+}
+.logo{
+    height: 68.21354675292969px;
+    width: 124.4661865234375px;
+    padding-left: 25px;
+    padding-top: 11px;
+    border-radius: 0px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+li a {
+    text-decoration: none;
+    color: #7D7D7E;
+}
+.nav-area li a:hover {
+    color: white;
+} 
+
+/* Top Bar Menu
+--------------- */
+
+.balance-count {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FF7901;
+}
+nav {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 7%);
+    border-radius: 45px;
+    width: 200px;
+    height: 60px;
+    float: right;
+    display: flex;
+    margin: 15px 30px 15px 30px;
+    align-items: center;
+  }
+  nav img {
+    padding: 10px;
+  }
+ .right-area{
+    position: relative;
+    width: 88%;
+ }
+.top-nav {
+    height: 90px;
+    background: #000000;
+}
+.top-nav-menu {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+.top-nav-menu p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+/* Profile Information Area 
+---------------------------*/
+
+.profile-info {
+    display: flex;
+}
+
+.profile-info-left {
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    background: white;
+    padding: 40px 86px 71px 67px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    width: 10%;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 30px;
+
+}
+.profile-info-right {
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    background: white;
+    margin: 30px;
+    width: 90%;
+}
+.profile-info-right p {
+    margin-left: 30px;
+}
+.card-area {
+    display: flex;
+    margin: 27px 30px;
+    width: 100%;
+}
+.credit-card {
+    box-sizing: border-box;
+    width: 30%;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    background: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #7D7D7E;
+}
+.credit-card img {
+    float: right;
+    padding: 6px;
+}
+.credit-card:hover {
+    border: 1px solid #FF7901;
+    border-radius: 10px;
+    color: #26262E;
+}
+.default-card {
+    border: 1px solid #FF7901;
+    border-radius: 10px;
+    color: #26262E;
+    margin: 0px 30px;
+}
+.profile-settings {
+    background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    margin: 30px;
+    padding-bottom: 60px;
+}
+
+/* Profile Settings Area 
+------------------------*/
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  .tab button:hover {
+    color: #FF7901;
+  }
+  
+  .tab button.active {
+    color: #FF7901;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+  .tabcontent {
+    display: contents;
+  }
+  
+  /* Toggle Switch Design Start
+  -----------------------*/
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #FF7901;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #FF7901;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+  }
+  input:checked + .slider {
+    background-color: #FF7901;
+  } 
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .slider.round:after {
+    border-radius: 50%;
+  }
+  /* Toggle Switch Design End 
+  ---------------------------*/
+
+
+  .settings-info {
+    margin-left: 318px;
+    margin-right: 318px;
+    margin-top: 54px;
+   }
+   .input-toggle {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+   }
+   .input-area {
+    display: flex;
+   }   
+   .intup-form {
+    margin-left: 20px;
+   }
+   .intup-form input {
+    border-radius: 10px;
+    border: 1px solid #F2F2F4;
+    padding: 14px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #BDBDBD;
+   }
+   .button {
+    background: #FF7901;
+    box-shadow: 0px 20px 50px rgb(255 121 1 / 30%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+   }
+
+   /* On screens that are 992px wide or less, the background color is blue
+@media screen and (max-width: 992px) {
+  
+} Thanks for the opportunity*/
